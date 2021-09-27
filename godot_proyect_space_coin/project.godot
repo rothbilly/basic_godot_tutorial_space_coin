@@ -8,9 +8,32 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "Level",
+"language": "GDScript",
+"path": "res://scripts/Level.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Player",
+"language": "GDScript",
+"path": "res://scripts/Player.gd"
+}, {
+"base": "Area2D",
+"class": "coin",
+"language": "GDScript",
+"path": "res://scripts/Coin.gd"
+} ]
+_global_script_class_icons={
+"Level": "",
+"Player": "",
+"coin": ""
+}
+
 [application]
 
 config/name="space_coin"
+run/main_scene="res://scene/Level.tscn"
 config/icon="res://icon.png"
 
 [display]
