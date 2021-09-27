@@ -5,8 +5,6 @@ Estado: Redactando
 
 # Empezando
 
-Tutorial básico (nota mental: escribir en Nosotros/Ustedes)
-
 Durante este tutorial utilizaremos la versión de Godot Engine 3.3.3, lo pueden descargar desde [https://godotengine.org/download](https://godotengine.org/download) 
 
 # El proyecto: Space Coin
