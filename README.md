@@ -6,7 +6,7 @@ Estado: Trabajo en procesos / Work in Progress
 # Empezando
 
 Durante este tutorial utilizaremos la versión de Godot Engine 3.3.3, lo pueden descargar desde [https://godotengine.org/download](https://godotengine.org/download) 
-El codigo fuente lo pueden encontrar ![Aqui](/godot_proyect_space_coin)
+El codigo fuente lo pueden encontrar [Aqui](godot_proyect_space_coin)
 
 # El proyecto: Space Coin
 
