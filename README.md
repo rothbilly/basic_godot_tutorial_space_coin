@@ -560,11 +560,17 @@ Algunas ideas que puedes implementar por tu cuenta
 - Hacer que aparezcan monedas cada vez que recoges una
 - Animación de la nave espacial
 
-# Conclusiones
+# Apoyame en este proyecto
 
-Cualquier duda o consultas pueden hacerlas enviando correo a roth81ly@gmail.com 
+Cualquier duda o consultas pueden hacerlas enviando correo a roth81ly@gmail.com,si encuentras fallos o cres que se requieren mejoras en la redaccion
 
-Revisa el código fuente de este proyecto en GitHub si:
+Puedes revisa el código fuente de este proyecto en GitHub:
 
 - Si quieres apoyar a mejorar este tutorial
 - Copiar el proyecto
+
+## Donaciones
+
+Puedes apoyarme a hacer mas contenido donando en kofi.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D669YMD)
