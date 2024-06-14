@@ -1,0 +1,29 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1718389603
+default_env.tres::Environment::7953574293515748484::1718330689::0::1::::<><>::
+icon.png::CompressedTexture2D::5337521909486569329::1718329148::1718329448::1::::<><>::
+::res://fonts/::1718329448
+Kenney Future Square.ttf::FontFile::5936365786400707039::1718329148::1718329448::1::::<><>::
+::res://scene/::1718330689
+Coin.tscn::PackedScene::7619277637728052172::1718330688::0::1::::<><>::uid://dignvjg2pb3hm::::res://sprites/coin_1.png<>res://scripts/Coin.gd
+GUI.tscn::PackedScene::933711732099684886::1718330688::0::1::::<><>::uid://cqtvcvh2jescd::::res://fonts/Kenney Future Square.ttf<>res://scripts/GUI.gd
+Level.tscn::PackedScene::6807355966964893124::1718330688::0::1::::<><>::uid://b60b4jyvx1a7t::::res://scene/Player.tscn<>uid://cbrjs6ped2gx5::::res://sprites/background.png<>uid://b1odq6sqocu88::::res://scene/Planet.tscn<>uid://dgs3nija4lxpk::::res://scene/Coin.tscn<>res://scripts/Level.gd<>uid://nkkdi00jl1g1::::res://scene/GUI.tscn
+Planet.tscn::PackedScene::4240444287295669955::1718330688::0::1::::<><>::uid://bn60tkvaafewk::::res://sprites/planet_1.png
+Player.tscn::PackedScene::4613997296110967731::1718330689::0::1::::<><>::uid://dobpsmdyrnm23::::res://sprites/space_ship.png<>res://scripts/Player.gd
+::res://scripts/::1718330687
+Coin.gd::GDScript::-1::1718329380::0::1::::coin<>Area2D<>::
+GUI.gd::GDScript::-1::1718329380::0::1::::<>CanvasLayer<>::
+Level.gd::GDScript::-1::1718329554::0::1::::Level<>Node2D<>::
+Player.gd::GDScript::-1::1718330687::0::1::::Player<>CharacterBody2D<>::
+::res://sounds/::1718329449
+sfx_point.wav::AudioStreamWAV::3804712360919865684::1718329148::1718329449::1::::<><>::
+sfx_robo_generic_explosion.wav::AudioStreamWAV::869282999495291503::1718329148::1718329449::1::::<><>::
+::res://sprites/::1718329449
+background.png::CompressedTexture2D::4878704881651177356::1718329148::1718329449::1::::<><>::
+coin_1.png::CompressedTexture2D::7733986372511738946::1718329148::1718329449::1::::<><>::
+planet_1.png::CompressedTexture2D::3364423773941325806::1718329148::1718329449::1::::<><>::
+planet_2.png::CompressedTexture2D::6916079454401634175::1718329148::1718329449::1::::<><>::
+planet_3.png::CompressedTexture2D::4191519966114180282::1718329148::1718329449::1::::<><>::
+space_ship.png::CompressedTexture2D::8144913774975910042::1718329148::1718329449::1::::<><>::
+star_1.png::CompressedTexture2D::7212034921652004233::1718329148::1718329449::1::::<><>::
+star_2.png::CompressedTexture2D::5162940315666345638::1718329148::1718329448::1::::<><>::

@@ -1,0 +1,8 @@
+res://default_env.tres
+res://scene/Level.tscn
+res://scripts/Level.gd
+res://scene/Coin.tscn
+res://scripts/Player.gd
+res://scene/GUI.tscn
+res://scene/Planet.tscn
+res://scene/Player.tscn

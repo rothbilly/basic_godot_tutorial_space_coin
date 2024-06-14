@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://dth8cgo4jtarb"]
+
+[ext_resource type="Script" path="res://entities/player.gd" id="1_b7phl"]
+[ext_resource type="Texture2D" uid="uid://dxbfj6kkb3tjb" path="res://sprites/space_ship.png" id="1_h816t"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lbiyu"]
+radius = 30.0
+height = 98.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h1b7u"]
+radius = 47.5079
+
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("shape") groups=["Player"]]
+script = ExtResource("1_b7phl")
+shape = NodePath("CollisionShape2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.421162, 0.421162)
+texture = ExtResource("1_h816t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_lbiyu")
+
+[node name="CaptureArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CaptureArea"]
+shape = SubResource("CircleShape2D_h1b7u")
+debug_color = Color(0.931165, 2.80121e-05, 0.65387, 0.42)
+
+[connection signal="area_entered" from="CaptureArea" to="." method="_on_capture_area_area_entered"]

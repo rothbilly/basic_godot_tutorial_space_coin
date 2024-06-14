@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjllrutk30rq5"]
+
+[ext_resource type="Texture2D" uid="uid://dexbsac0eq0vi" path="res://sprites/planet_2.png" id="1_aowcp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_76d2t"]
+radius = 112.04
+
+[node name="Planet" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_aowcp")
+offset = Vector2(23.3, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_76d2t")

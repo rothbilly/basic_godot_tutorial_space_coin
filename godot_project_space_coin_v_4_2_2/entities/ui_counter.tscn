@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://bicc2osmbafb3"]
+
+[ext_resource type="FontFile" uid="uid://cxg0ldibnkbvb" path="res://entities/Kenney Future Square.ttf" id="1_sp0in"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yxtf6"]
+font = ExtResource("1_sp0in")
+font_size = 300
+font_color = Color(1, 1, 1, 0.184314)
+
+[node name="Counter" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+text = "00"
+label_settings = SubResource("LabelSettings_yxtf6")

@@ -1,0 +1,66 @@
+[gd_scene load_steps=9 format=3 uid="uid://c6rwxgccltkuw"]
+
+[ext_resource type="Texture2D" uid="uid://m08xi2t051jf" path="res://sprites/background.png" id="1_3calg"]
+[ext_resource type="PackedScene" uid="uid://dth8cgo4jtarb" path="res://entities/player.tscn" id="1_58xrh"]
+[ext_resource type="PackedScene" uid="uid://bicc2osmbafb3" path="res://entities/ui_counter.tscn" id="1_nn82k"]
+[ext_resource type="Script" path="res://entities/level.gd" id="1_r454l"]
+[ext_resource type="Script" path="res://entities/ui_counter.gd" id="2_cqb2j"]
+[ext_resource type="PackedScene" uid="uid://bao2wr8aa0trq" path="res://entities/coin.tscn" id="3_4fo3a"]
+[ext_resource type="Script" path="res://entities/coin_spawner.gd" id="4_75ou1"]
+[ext_resource type="PackedScene" uid="uid://bjllrutk30rq5" path="res://entities/planet.tscn" id="6_8tvn6"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_r454l")
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="Counter" parent="GUI" instance=ExtResource("1_nn82k")]
+script = ExtResource("2_cqb2j")
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(969.125, 571.125)
+scale = Vector2(0.969605, 0.969605)
+texture = ExtResource("1_3calg")
+
+[node name="Monedas" type="Node2D" parent="."]
+position = Vector2(890, 531)
+script = ExtResource("4_75ou1")
+coin_scene = ExtResource("3_4fo3a")
+coin_spawn_time = 12
+
+[node name="Timer" type="Timer" parent="Monedas"]
+
+[node name="Coin" parent="Monedas" instance=ExtResource("3_4fo3a")]
+position = Vector2(-451, 82)
+
+[node name="Coin2" parent="Monedas" instance=ExtResource("3_4fo3a")]
+position = Vector2(-55, -348)
+
+[node name="Coin3" parent="Monedas" instance=ExtResource("3_4fo3a")]
+position = Vector2(481, 241)
+
+[node name="Coin4" parent="Monedas" instance=ExtResource("3_4fo3a")]
+position = Vector2(-175, 335)
+
+[node name="Coin5" parent="Monedas" instance=ExtResource("3_4fo3a")]
+position = Vector2(-610, -239)
+
+[node name="Player" parent="." instance=ExtResource("1_58xrh")]
+position = Vector2(890, 531)
+aceleracion = 300.0
+
+[node name="Planet" parent="." instance=ExtResource("6_8tvn6")]
+position = Vector2(563, 312)
+
+[node name="Planet2" parent="." instance=ExtResource("6_8tvn6")]
+position = Vector2(1389, 474)
+rotation = -1.04341
+
+[node name="Planet3" parent="." instance=ExtResource("6_8tvn6")]
+position = Vector2(411, 874)
+rotation = -1.04341
+
+[connection signal="add_coin" from="Monedas" to="." method="_on_monedas_add_coin"]
+[connection signal="timeout" from="Monedas/Timer" to="Monedas" method="_on_timer_timeout"]
+[connection signal="grab_coin" from="Player" to="." method="_on_player_grab_coin"]
+[connection signal="grab_coin" from="Player" to="GUI/Counter" method="_on_player_grab_coin"]
