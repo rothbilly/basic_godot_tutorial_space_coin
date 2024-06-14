@@ -1,21 +1,22 @@
-extends KinematicBody2D
+extends CharacterBody2D
 class_name Player
 
 const VIEW_SCALE = 100
 
-export var acelearation :int = 200 
+@export var acelearation :int = 200 
 
 var direction: Vector2 = Vector2.ZERO
-var velocity = Vector2.ZERO
 
-onready var screen_size = get_viewport_rect().size
-onready var shape = $CollisionShape2D.shape
+@onready var screen_size = get_viewport_rect().size
+@onready var shape = $CollisionShape2D.shape
 	
 func _physics_process(delta):
 	get_input()
 	
 	velocity = direction * acelearation * delta * VIEW_SCALE
-	velocity = move_and_slide(velocity)
+	set_velocity(velocity)
+	move_and_slide()
+	velocity = velocity
 	
 	position.x = wrapf(position.x, 0, screen_size.x + shape.height * 0.5)
 	position.y = wrapf(position.y, 0, screen_size.y + shape.radius * 0.5)

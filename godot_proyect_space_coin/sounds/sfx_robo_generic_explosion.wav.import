@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/sfx_robo_generic_explosion.wav-33c0d8abd91868551050b1cc3f7c4196.sample"
+type="AudioStreamWAV"
+uid="uid://mnc71m8beov4"
+path="res://.godot/imported/sfx_robo_generic_explosion.wav-33c0d8abd91868551050b1cc3f7c4196.sample"
 
 [deps]
 
 source_file="res://sounds/sfx_robo_generic_explosion.wav"
-dest_files=[ "res://.import/sfx_robo_generic_explosion.wav-33c0d8abd91868551050b1cc3f7c4196.sample" ]
+dest_files=["res://.godot/imported/sfx_robo_generic_explosion.wav-33c0d8abd91868551050b1cc3f7c4196.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

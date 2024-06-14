@@ -4,7 +4,7 @@ class_name coin
 var point = 5
 var player : Player
 
-onready var screen_size = get_viewport_rect().size
+@onready var screen_size = get_viewport_rect().size
 
 func _ready():
 	randomise_pos()
@@ -15,8 +15,8 @@ func _process(delta):
 
 func randomise_pos():
 	randomize()
-	self.position.x = rand_range(0, screen_size.x)
-	self.position.y = rand_range(0, screen_size.y)
+	self.position.x = randf_range(0, screen_size.x)
+	self.position.y = randf_range(0, screen_size.y)
 
 func _on_Coin_body_entered(body):
 	print("enter")

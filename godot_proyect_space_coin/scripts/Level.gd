@@ -1,10 +1,10 @@
 extends Node2D
 class_name Level
 
-export (PackedScene) var CoinScene ##Escena de las moneda
-export var max_coin: int  = 100
+@export var CoinScene: PackedScene ##Escena de las moneda
+@export var max_coin: int  = 100
 
-onready var screen_size = get_viewport_rect().size
+@onready var screen_size = get_viewport_rect().size
 
 func _ready():
 	for i in max_coin:
@@ -13,7 +13,7 @@ func _ready():
 	pass 
 
 func instaciate_coin():
-	var coin = CoinScene.instance()
+	var coin = CoinScene.instantiate()
 	add_child(coin)
 
 var total_coin: int = 0
