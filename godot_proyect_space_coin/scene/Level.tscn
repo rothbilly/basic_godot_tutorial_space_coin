@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://c38sfm5icaaqe"]
 
-[ext_resource type="PackedScene" path="res://scene/Player.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://b60b4jyvx1a7t" path="res://scene/Player.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://cbrjs6ped2gx5" path="res://sprites/background.png" id="2"]
-[ext_resource type="PackedScene" path="res://scene/Planet.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b1odq6sqocu88" path="res://scene/Planet.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://dgs3nija4lxpk" path="res://scene/Coin.tscn" id="4"]
 [ext_resource type="Script" path="res://scripts/Level.gd" id="5"]
 [ext_resource type="PackedScene" uid="uid://nkkdi00jl1g1" path="res://scene/GUI.tscn" id="6"]
